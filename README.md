@@ -2,7 +2,7 @@
 ## Description
 Application to randomly generate an 8-128 character password consisting of numbers, symbols, lowercase and uppercase numbers
 
-##Screenshot of Password Generator
+## Screenshot of Password Generator
 ![Password-Generator](./Password-Generator.png)
 
 URL to Application: 
