@@ -15,9 +15,9 @@ var characterSymbol = "!@#$%^&*()";
 
 //function to determine if input is within length parameters
 function generatePassword() {
-finalPassword = "";
-choicesArray = "";
-promptLength = parseInt(window.prompt("How many characters would you like your password? (must be between 8 and 128)"));
+  finalPassword = "";
+  choicesArray = "";
+  promptLength = parseInt(window.prompt("How many characters would you like your password? (must be between 8 and 128)"));
 
 
   while (isNaN(promptLength) || promptLength < 8 || promptLength > 128) {
