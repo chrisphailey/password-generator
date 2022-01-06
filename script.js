@@ -43,57 +43,24 @@ function generatePassword() {
   if (symbolsTrue) choicesArray += characterSymbol;
   if (lowercaseTrue) choicesArray += characterLower;
   if (uppercaseTrue) choicesArray += characterUpper;
-  console.log(choicesArray);
   for (var i=0; i < parseInt(promptLength); i++){
     var randomIndex = Math.floor(Math.random()*choicesArray.length); 
     finalPassword += choicesArray[randomIndex]
   }
   return finalPassword;
 };
-// }
-// console.log(password);
-
-
-
-
-
-
-
-
-// // Function for Lowercase letters - https://net-comber.com/charset.html
-// function getRandomLower() {
-//   return String.fromCharCode(Math.floor(Math.random()*26)+97);
-// }
-
-// //function for Uppercase letters
-// function getRandomUpper() {
-//   return String.fromCharCode(Math.floor(math.random()*26)+65);
-// }
-// //function for numbers
-// function getRandomNumber() {
-//   return String.fromCharCode(Math.floor(Math.random()*10)+48)
-// }
-// //function for symbols
-// function getRandomSymbols(){
-//   var symbols = "!@#$%^&*(){}"
-//   return symbols[Math.floor(Math.random()* symbols.length)];
-// }
-
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-generateBtn.onclick = function writePassword() {
+function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-  return generatePassword;
-}
-
+  return password;
+};
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-writePassword();
 
 
